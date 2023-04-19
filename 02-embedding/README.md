@@ -227,7 +227,7 @@ w = plus( w, 'job' )
 closest( w, n_words=30, limit=30000 )
 ```
 
-Vedrai che stavolta i risultati sono più confusionari. Si trovano parole azzeccate come *experience* e *working*, ma altre sono abbastanza generiche come *get* e *doing*. In questo caso abbiamo limitato la ricerca alle prime 30K parole, puoi provare ad alzare il limite. Inoltre, ricorda che abbiamo usato il dizionario GloVe più piccolo disponibilie, puoi provare a scaricare uno dei dataset più grandi ([link](https://nlp.stanford.edu/projects/glove/)) e giocherellare con un embedding ancora migliore!
+Noterai che stavolta i risultati sono più confusionari. Si trovano parole azzeccate come *experience* e *working*, ma altre sono abbastanza generiche come *get* e *doing*. In questo caso abbiamo limitato la ricerca alle prime 30K parole, puoi provare ad alzare il limite. Inoltre, ricorda che abbiamo usato il dizionario GloVe più piccolo disponibilie, puoi provare a scaricare uno dei dataset più grandi ([link](https://nlp.stanford.edu/projects/glove/)) e giocherellare con un embedding ancora migliore!
 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
