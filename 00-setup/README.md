@@ -1,4 +1,4 @@
-# 00-setup
+# 00. Setup iniziale
 
 ## Obiettivo
 Prendiamo confidenza con gli strumenti che ci serviranno 👩‍💻
@@ -32,7 +32,7 @@ Fai una prova a scrivere del codice nella cella ed eseguirla. Incolla nella cell
 ```
 print( "ciao" )
 ```
-Adesso premi sul pulsante ▶️ per eseguire la cella. La prima volta che esegui un nuovo notebook, ci impiegherà qualche secondo per aprire la sessione online (puoi controllare lo stato della connessione in alto a destra). Puoi verificare che la cella di codice è in esecuzione dall'icona del pulsante ▶️ che è cambiata.
+Adesso premi sul pulsante ▶️ per eseguire la cella (oppure usa il comando `ctrl + enter` o `cmd + enter`). La prima volta che esegui un nuovo notebook, ci impiegherà qualche secondo per aprire la sessione online (puoi controllare lo stato della connessione in alto a destra). Puoi verificare che la cella di codice è in esecuzione dall'icona del pulsante ▶️ che è cambiata.
 
 ![Esecuzione in corso](../assets/00-exec.png)
 
@@ -42,6 +42,7 @@ Quando l'esecuzione è conclusa, sotto la cella di codice compare un box con il 
 
 
 
+<!--
 ## Utilizza file esterni
 
 Durante l'esempio di oggi, ti servirà leggere dei file esterni da utilizzare all'interno del codice.
@@ -55,6 +56,7 @@ Nel riquadro puoi visualizzare i file che sono presenti nello "storage virtuale"
 Quando avrai bisogno di caricare un tuo file, potrai farlo cliccando sull'icona a sinistra e selezionando il file dal tuo computer.
 
 ![Upload di file](../assets/00-filetree.png)
+-->
 
 
 
@@ -76,4 +78,4 @@ Hai coperto tutte le funzionalità principali di Google Colab! Sei pronta per in
 Puoi procedere con il prossimo step!
 | Capitolo successivo                                                                           |
 | ---------------------------------------------------------------------------------------------------: |
-[01-classificatore-come-funziona ▶︎](../01-classificatore-come-funziona) |
+[01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt)
