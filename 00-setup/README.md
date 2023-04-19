@@ -29,7 +29,7 @@ A sinistra della cella di codice trovi un pulsante ▶️ per eseguire il codice
 
 Fai una prova a scrivere del codice nella cella ed eseguirla. Incolla nella cella il seguente codice per stampare una stringa:
 
-```
+```py
 print( "ciao" )
 ```
 Adesso premi sul pulsante ▶️ per eseguire la cella (oppure usa il comando `ctrl + enter` o `cmd + enter`). La prima volta che esegui un nuovo notebook, ci impiegherà qualche secondo per aprire la sessione online (puoi controllare lo stato della connessione in alto a destra). Puoi verificare che la cella di codice è in esecuzione dall'icona del pulsante ▶️ che è cambiata.

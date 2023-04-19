@@ -15,7 +15,6 @@ L'embedding mappa le parole in un vettore di numeri reali, di solito lunghi cent
 Esistono dei "dizionari" di word embedding già pronti da utilizzare: i più famosi sono *Word2vec* e *GloVe*. In questo esempio utilizzeremo uno dei dizionari di [GloVe](https://nlp.stanford.edu/projects/glove/). Consideriamo il dizionario più piccolo in modo che l'esecuzione del codice sia veloce. Però piccolo per modo di dire! Questo dizionario è stato ricavato da un corpus di testo di **più di 6 miliardi di parole** prese da Wikipedia e importanti testate giornalistiche. Non male 😎
 
 > ***Curiosità: che tipo di word embedding usa ChatGPT?***
-
 > ChatGPT non usa un algoritmo standard come GloVe o Word2vec, ma impara un embedding tutto suo durante la fase di addestramento della sua rete neurale. Utilizza una tecnica complessa di *auto supervisione* *(self-supervision)* con cui impara a catturare le dipendenze tra parole in base alla loro posizione in una frase. Ovvero, il vettore di embedding di una parola è in grado di rappresentare anche il contesto della frase. Inoltre, i vettori di embedding che usa ChatGPT sono molto grandi, arrivano ad avere dimensione di 1024 elementi.
 
 
@@ -27,14 +26,14 @@ Esistono dei "dizionari" di word embedding già pronti da utilizzare: i più fam
 Su Google Colab crea un nuovo notebook e rinominalo ad esempio in `embedding.ipynb`.
 Crea una cella di codice, incolla il seguente comando ed esegui la cella per scaricare il file di embedding:
 
-```
+```py
 !wget https://www.dropbox.com/s/b3jbd1bgf93rkw6/glove.6B.50d.txt
 ```
 
 <!--Scarica il file `glove.6B.50d.txt` che trovi a questo [link](https://www.dropbox.com/s/b3jbd1bgf93rkw6/glove.6B.50d.txt?dl=0) e salvalo temporaneamente sul tuo computer. Vai sul notebook Colab e carica il file all'interno della sessione (come spiegato nel [capitolo precedente](../00-setup)).-->
 
 Il file `glove.6B.50d.txt` che hai appena scaricato è uno dei dizionari di word embedding di GloVe, e contiene 400K parole e i corrispondenti vettori ciascuno lungo 50 elementi.
-Se sei curiosa di vedere il suo contenuto, puoi notare che si tratta di un file testuale di appunto 400K righe, dove ogni riga inizia con una parola ed è seguita da 50 numeri decimali. Il file ha un aspetto del genere:
+Se sei curiosa di vedere il suo contenuto, puoi notare che si tratta di un file testuale di appunto 400K righe, dove ogni riga inizia con una parola ed è seguita da 50 numeri decimali. Le righe del file ha un aspetto del genere:
 
 ```
 the 0.418 0.24968 -0.41242 0.1217 0.34527 -0.044457 -0.49688 -0.17862 -0.00066023 -0.6566 0.27843 -0.14767 -0.55677 0.14658 -0.0095095 0.011658 0.10204 -0.12792 -0.8443 -0.12181 -0.016801 -0.33279 -0.1552 -0.23131 -0.19181 -1.8823 -0.76746 0.099051 -0.42125 -0.19526 4.0071 -0.18594 -0.52287 -0.31681 0.00059213 0.0074449 0.17778 -0.15897 0.012041 -0.054223 -0.29871 -0.15749 -0.34758 -0.045637 -0.44251 0.18785 0.0027849 -0.18411 -0.11514 -0.78581
@@ -46,7 +45,7 @@ in 0.33042 0.24995 -0.60874 0.10923 0.036372 0.151 -0.55083 -0.074239 -0.092307 
 
 In questo esempio ti servono tre pacchetti di python, con delle funzioni pronte per manipolare vettori. Esegui questo codice in una nuova cella in Colab:
 
-```
+```py
 import  os
 import  numpy                    as np
 from    tensorflow.python.keras  import losses
@@ -58,7 +57,7 @@ Crea una funzione per leggere il file ed estrarne i word embedding. La funzione 
 
 Esegui questo codice in una nuova cella in Colab:
 
-```
+```py
 def read_glove( glove_file ):
     embedding   = {}
     
@@ -84,7 +83,7 @@ def read_glove( glove_file ):
 
 Ora che hai definito la funzione, in una nuova cella esegui il codice qui sotto. Questa esecuzione impiega un po' di tempo, circa 2 minuti e mezzo (dopotutto, sono un sacco di parole!). Quindi lancia l'esecuzione e prenditi un attimo di pausa ☕️
 
-```
+```py
 glove_file  = "glove.6B.50d.txt"
 embedding   = read_glove( glove_file )
 ```
@@ -97,7 +96,7 @@ Adesso hai un dizionario di embedding pronto per essere usato! Cosa puoi farci c
 
 Per prima cosa, ti può essere utile una funzione per visualizzare il vettore di embedding di una parola a piacimento. La puoi definire con il seguente codice, incollalo in una nuova cella ed esegui:
 
-```
+```py
 def embed( word ):
     if isinstance( word, str ):
         # controlla se la parola è presente nel dizionario
@@ -109,7 +108,7 @@ def embed( word ):
 
 Fai una prova! In una nuova cella esegui il seguente comando per visualizzare il vettore che rappresenta, ad esempio, la parola *unicorn* 🦄
 
-```
+```py
 print( embed( "unicorn" ) )
 ```
 
@@ -119,7 +118,7 @@ Come potrai vedere, il risultato è una sequenza incomprensibile di 50 numeri. E
 
 È possibile valutare quanto due parole sono "vicine" di significato misurando la similarità tra i vettori. Un metodo comune per effettuare questa misura è applicare la *similarità del coseno*, che è già presente in uno dei pacchetti python che abbiamo importato all'inizio del file. Esegui questo codice in una nuova cella:
 
-```
+```py
 def sim( word1, word2 ):
     word1   = embed( word1 )
     word2   = embed( word2 )
@@ -131,10 +130,10 @@ Questa funzione restituisce un numero tra -1 e 1. Se il risultato è vicino a -1
 
 Prova, ad esempio, a misurare la similarità tra *dog* e *wolf* 🐶🐺, e tra *dog* e *galaxy* 🐶🪐
 
-```
+```py
 sim( 'dog', 'wolf' )
 ```
-```
+```py
 sim( 'dog', 'galaxy' )
 ```
 
@@ -148,7 +147,7 @@ Il numero di parole da dare come risultato è indicato dal parametro `n_words`. 
 
 Incolla ed esegui questo in una nuova cella: 
 
-```
+```py
 def closest( word, n_words=5, limit=50000 ):
     word      = embed( word )
     cnt       = 0
@@ -186,7 +185,7 @@ def closest( word, n_words=5, limit=50000 ):
 
 Adesso prova ad esempio a trovare le 10 parole più simili a *queen* 👑 limitando la ricerca alle prima 20K parole:
 
-```
+```py
 closest( 'queen', n_words=10, limit=20000 )
 ```
 
@@ -196,7 +195,7 @@ Come vedrai, la parola più vicina è *princess* con un punteggio di -0.851.
 
 Dato che abbiamo trasformato le parole in vettori numerici, è possibile eseguire operazioni artimetiche sulle parole, come somma e sottrazione! Prova ad eseguire questo codice:
 
-```
+```py
 # somma tra due parole
 def plus( word1, word2 ):
     word1   = embed( word1 )
@@ -212,7 +211,7 @@ def minus( word1, word2 ):
 
 Forse ti starai chiedendo, qual è il senso di eseguire operazioni tra parole? Un classico esempio è il seguente: se alla parola *king* si sottrae la parola *man* e poi si aggiunge *woman*, il risultato sarà una parola estremamente simile a *queen*. Provare per credere!
 
-```
+```py
 w = minus( 'king', 'man' )
 w = plus( w, 'woman' )
 sim( w, 'queen' )
@@ -222,7 +221,7 @@ Il punteggio di similarità tra *queen* e il risultato dell'operazione è -0.860
 
 Vuoi un esempio più complesso? Cosa succede se alla parola *queen* si toglie *throne* e si aggiunge *job*? Con il seguente codice, calcoliamo il risultato e visualizziamo le 30 parole più simili:
 
-```
+```py
 w = minus( 'queen', 'throne' )
 w = plus( w, 'job' )
 closest( w, n_words=30, limit=30000 )
