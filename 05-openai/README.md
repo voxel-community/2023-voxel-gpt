@@ -49,7 +49,7 @@ openai.api_key  = KEY
 
 ### 3. Genera un dataset personalizzato
 
-#### A. Definisci la prompt
+#### 3a. Definisci la prompt
 
 ```py
 main_prompt  = "Create a detailed description of a Dungeons and Dragons character with "
@@ -65,7 +65,7 @@ list_weapon = [ 'sword', 'crossbow' ]
 list_pet    = [ 'wolf', 'fox' ]
 ```
 
-#### B. Imposta un modello per fare *completion*
+#### 3b. Imposta un modello per fare *completion*
 
 ```py
 def get_completion( model, prompt, temperature=0.8, max_tokens=500 ):
@@ -84,7 +84,7 @@ def view_completion( model, prompt, temperature=0.8, max_tokens=500 ):
     print( res[ 'choices' ][ 0 ][ 'text' ] )
 ```
 
-#### C. Usa la *completion* per generare il dataset
+#### 3c. Usa la *completion* per generare il dataset
 
 ```py
 def generate_data( model, temperature=0.8, max_tokens=500 ):
@@ -126,7 +126,7 @@ def upload_dataset( fname ):
     return res[ 'id' ]  # return id of file
 ```
 
-#### D. Genera il dataset!
+#### 3d. Genera il dataset!
 
 ```py
 gen_model  = "text-davinci-003"

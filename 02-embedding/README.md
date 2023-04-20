@@ -92,7 +92,7 @@ embedding   = read_glove( glove_file )
 
 Adesso hai un dizionario di embedding pronto per essere usato! Cosa puoi farci con questo?
 
-#### A. Visualizza la rappresentazione di una parola
+#### 4a. Visualizza la rappresentazione di una parola
 
 Per prima cosa, ti può essere utile una funzione per visualizzare il vettore di embedding di una parola a piacimento. La puoi definire con il seguente codice, incollalo in una nuova cella ed esegui:
 
@@ -114,7 +114,7 @@ print( embed( "unicorn" ) )
 
 Come potrai vedere, il risultato è una sequenza incomprensibile di 50 numeri. Ebbene, questo è ciò che basta ad un modello di linguaggio artificiale per imparare il significato delle parole!
 
-#### B. Misura la similarità tra due parole
+#### 4b. Misura la similarità tra due parole
 
 È possibile valutare quanto due parole sono "vicine" di significato misurando la similarità tra i vettori. Un metodo comune per effettuare questa misura è applicare la *similarità del coseno*, che è già presente in uno dei pacchetti python che abbiamo importato all'inizio del file. Esegui questo codice in una nuova cella:
 
@@ -139,7 +139,7 @@ sim( 'dog', 'galaxy' )
 
 Prevedibilmente, la parola *dog* ha molta più similarità con *wolf* che con *galaxy*.
 
-#### C. Trova le parole più simili
+#### 4c. Trova le parole più simili
 
 Data una parola, trova quali sono le parole più "vicine" a questa. Bisogna definire una funzione che analizza il dizionario, calcola le similarità tra le parole e quella di input, e salva le parole che hanno similarità migliore.
 
@@ -191,7 +191,7 @@ closest( 'queen', n_words=10, limit=20000 )
 
 Come vedrai, la parola più vicina è *princess* con un punteggio di -0.851.
 
-#### D. Somma le parole insieme (Whaaat?!) 
+#### 4d. Somma le parole insieme (Whaaat?!) 
 
 Dato che abbiamo trasformato le parole in vettori numerici, è possibile eseguire operazioni artimetiche sulle parole, come somma e sottrazione! Prova ad eseguire questo codice:
 
