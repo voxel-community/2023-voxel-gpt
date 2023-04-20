@@ -2,7 +2,7 @@
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ Torna all'inizio](../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
+| [◀︎ Torna all'inizio](../../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
 
 ## Obiettivo
 Prendiamo confidenza con gli strumenti che ci serviranno 👩‍💻
@@ -83,4 +83,4 @@ Puoi procedere con il primo capitolo!
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
-| [◀︎ Torna all'inizio](../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
+| [◀︎ Torna all'inizio](../../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
