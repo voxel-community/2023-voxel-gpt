@@ -10,7 +10,7 @@ Impara cos'è e come funziona il *word embedding* 🔠 all'interno di un modello
 
 L'embedding di parole è una tecnica per rappresentare le parole in modo che una intelligenza artificiale possa comprendere il significato. In parole semplici, è un modo per **convertire le parole in numeri** che possono essere utilizzati come input per un modello di apprendimento automatico.
 
-L'embedding mappa le parole in un vettore di numeri reali, di solito lunghi centinaia di elementi. Questa rappresentazione cattura le relazioni tra le parole, come le somiglianze e le differenze di significato, contesto e uso. Ad esempio, parole simili come `gatto` e `cane` avranno rappresentazioni simili 🐶🐱, mentre parole dissimili come `gatto` e `computer` avranno rappresentazioni dissimili 🐱💻.
+L'embedding mappa le parole in un vettore di numeri reali, di solito lunghi centinaia di elementi. Questa rappresentazione cattura le relazioni tra le parole, come le somiglianze e le differenze di significato, contesto e uso. Ad esempio, parole simili come `gatto` e `cane` avranno rappresentazioni "vicine" 🐶🐱, mentre parole dissimili come `gatto` e `computer` avranno rappresentazioni "distanti" 🐱💻.
 
 Esistono dei "dizionari" di word embedding già pronti da utilizzare: i più famosi sono *Word2vec* e *GloVe*. In questo esempio utilizzeremo uno dei dizionari di [GloVe](https://nlp.stanford.edu/projects/glove/). Consideriamo il dizionario più piccolo in modo che l'esecuzione del codice sia veloce. Però piccolo per modo di dire! Questo dizionario è stato ricavato da un corpus di testo di **più di 6 miliardi di parole** prese da Wikipedia e importanti testate giornalistiche. Non male 😎
 
@@ -26,7 +26,7 @@ Esistono dei "dizionari" di word embedding già pronti da utilizzare: i più fam
 Su Google Colab crea un nuovo notebook e rinominalo ad esempio in `embedding.ipynb`.
 Crea una cella di codice, incolla il seguente comando ed esegui la cella per scaricare il file di embedding:
 
-```py
+```
 !wget https://www.dropbox.com/s/b3jbd1bgf93rkw6/glove.6B.50d.txt
 ```
 
@@ -92,7 +92,7 @@ embedding   = read_glove( glove_file )
 
 Adesso hai un dizionario di embedding pronto per essere usato! Cosa puoi farci con questo?
 
-#### Visualizza la rappresentazione di una parola
+#### A. Visualizza la rappresentazione di una parola
 
 Per prima cosa, ti può essere utile una funzione per visualizzare il vettore di embedding di una parola a piacimento. La puoi definire con il seguente codice, incollalo in una nuova cella ed esegui:
 
@@ -114,7 +114,7 @@ print( embed( "unicorn" ) )
 
 Come potrai vedere, il risultato è una sequenza incomprensibile di 50 numeri. Ebbene, questo è ciò che basta ad un modello di linguaggio artificiale per imparare il significato delle parole!
 
-#### Misura la similarità tra due parole
+#### B. Misura la similarità tra due parole
 
 È possibile valutare quanto due parole sono "vicine" di significato misurando la similarità tra i vettori. Un metodo comune per effettuare questa misura è applicare la *similarità del coseno*, che è già presente in uno dei pacchetti python che abbiamo importato all'inizio del file. Esegui questo codice in una nuova cella:
 
@@ -139,7 +139,7 @@ sim( 'dog', 'galaxy' )
 
 Prevedibilmente, la parola *dog* ha molta più similarità con *wolf* che con *galaxy*.
 
-#### Trova le parole più simili
+#### C. Trova le parole più simili
 
 Data una parola, trova quali sono le parole più "vicine" a questa. Bisogna definire una funzione che analizza il dizionario, calcola le similarità tra le parole e quella di input, e salva le parole che hanno similarità migliore.
 
@@ -191,7 +191,7 @@ closest( 'queen', n_words=10, limit=20000 )
 
 Come vedrai, la parola più vicina è *princess* con un punteggio di -0.851.
 
-#### Somma le parole insieme (Whaaat?!) 
+#### D. Somma le parole insieme (Whaaat?!) 
 
 Dato che abbiamo trasformato le parole in vettori numerici, è possibile eseguire operazioni artimetiche sulle parole, come somma e sottrazione! Prova ad eseguire questo codice:
 
@@ -227,7 +227,7 @@ w = plus( w, 'job' )
 closest( w, n_words=30, limit=30000 )
 ```
 
-Noterai che stavolta i risultati sono più confusionari. Si trovano parole azzeccate come *experience* e *working*, ma altre sono abbastanza generiche come *get* e *doing*. In questo caso abbiamo limitato la ricerca alle prime 30K parole, puoi provare ad alzare il limite. Inoltre, ricorda che abbiamo usato il dizionario GloVe più piccolo disponibilie, puoi provare a scaricare uno dei dataset più grandi ([link](https://nlp.stanford.edu/projects/glove/)) e giocherellare con un embedding ancora migliore!
+Noterai che stavolta i risultati sono più confusionari. Si trovano parole azzeccate come *experience* e *working*, ma altre sono abbastanza generiche come *get* e *doing*. In questo caso abbiamo limitato la ricerca alle prime 30K parole, per ottenere risultati più interessanti puoi provare ad alzare il limite. Inoltre, ricorda che abbiamo usato il dizionario GloVe più piccolo disponibilie, puoi provare a scaricare uno dei dataset più grandi ([link](https://nlp.stanford.edu/projects/glove/)) e giocherellare con un embedding ancora migliore!
 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
