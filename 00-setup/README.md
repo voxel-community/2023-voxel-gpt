@@ -1,5 +1,9 @@
 # 00. Setup iniziale
 
+| Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
+| [◀︎ Torna all'inizio](../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
+
 ## Obiettivo
 Prendiamo confidenza con gli strumenti che ci serviranno 👩‍💻
 
@@ -75,7 +79,8 @@ Vai sulle impostazioni miscellanee, e prova ad attivare una delle *modalità* op
 
 Hai coperto tutte le funzionalità principali di Google Colab! Sei pronta per iniziare 🤩
 
-Puoi procedere con il prossimo step!
-| Capitolo successivo                                                                           |
-| ---------------------------------------------------------------------------------------------------: |
-[01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt)
+Puoi procedere con il primo capitolo!
+
+| Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
+| [◀︎ Torna all'inizio](../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
