@@ -8,10 +8,10 @@
 
 Impara 🌡🥵🥶
 
-[**HuggingFace**](https://huggingface.co/) 🤗
+[**Hugging Face**](https://huggingface.co/) 🤗
 
-> ***Curiosità:***
-> Solitamente
+> ***Curiosità: cos'è Hugging Face?***
+> Hugging Face è una società e una libreria di software open-source che fornisce strumenti di elaborazione del linguaggio naturale all'avanguardia. La loro libreria, chiamata *transformers*, include modelli pre-allenati per una varietà di compiti, come la generazione di linguaggio, la risposta alle domande e la classificazione del testo.
 
 
 # TBD.............

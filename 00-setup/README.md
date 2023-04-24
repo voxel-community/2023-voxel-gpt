@@ -5,7 +5,7 @@
 | [◀︎ Torna all'inizio](../../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
 
 ## Obiettivo
-Prendiamo confidenza con gli strumenti che ci serviranno 👩‍💻
+Prendi confidenza con gli strumenti che ti serviranno in questo esercizio 👩‍💻
 
 Nell'esempio di oggi, scriviamo codice in **Python**, il linguaggio di programmazione più diffuso per sviluppare reti neurali.
 
