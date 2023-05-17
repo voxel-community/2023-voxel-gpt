@@ -91,7 +91,7 @@ def from_tokens( tokens, tokenizer ):
 
 ### 3. Testa il *tokenizer*
 
-Prova ad eseguire delle tokenizazion 🔡
+Prova ad eseguire delle tokenization 🔡
 Inizia creando l'oggetto `tokenizer`:
 
 ```py
