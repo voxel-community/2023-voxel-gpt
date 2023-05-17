@@ -14,7 +14,7 @@ Ma prima, se sei curiosa di sapere meglio in cosa consiste ChatGPT, leggi qui so
 
 ## Come funziona ChatGPT
 
-ChatGPT è un modello di linguaggio basato sull'architettura GPT sviluppata da [**OpenAI**](https://openai.com/). È progettato per generare risposte simili a quelle umane a richieste di linguaggio naturale 💬 come domande o affermazioni.
+ChatGPT è un tipo di "large language model" (LLM), ovvero modello di linguaggio basato sull'architettura GPT sviluppata da [**OpenAI**](https://openai.com/). È progettato per generare risposte simili a quelle umane a richieste di linguaggio naturale 💬 come domande o affermazioni.
 
 ChatGPT funziona analizzando il testo in ingresso e utilizzando una rete neurale per generare una risposta simile nello stile e nel tono a una risposta generata da un essere umano. La rete neurale viene addestrata su grandi quantità di dati testuali per imparare i modelli del linguaggio e le relazioni tra le diverse parole.
 
@@ -35,7 +35,7 @@ GPT-3 è la terza versione di un modello chiamato *Generative Pre-trained Transf
 
 Nel marzo 2023, OpenAI ha rilasciato la nuova versione chiamata **GPT-4**. Si tratta di un modello ancora più grande, con mille miliardi di parametri 🦾 e addestrato su 45 GB di dati. Inoltre GPT-4 è un modello multimodale che accetta in input sia immagini che testo (e produce output testuale).
 
-
+<!--
 ### ChatGPT bloccato in Italia
 
 Dal 31 marzo 2023, OpenAI ha bloccato l’accesso al servizio ❌ per gli indirizzi IP italiani a seguito di una richiesta del Garante italiano per la protezione dei dati personali. Tuttavia, il blocco riguarda solamente il modello ChatGPT.
@@ -43,7 +43,7 @@ Dal 31 marzo 2023, OpenAI ha bloccato l’accesso al servizio ❌ per gli indiri
 Tramite le API di OpenAI è ancora possibile utilizzare tutti i modelli GPT disponibili. Ed è quello che andremo a fare oggi! 💪 Adesso che ti sei fatta un'idea di cosa sia ChatGPT, sei pronta ad iniziare! Puoi passare al capitolo successivo ✨
 
 P.S. Cerchi un'alternativa a ChatGPT dopo il blocco in Italia? Prova [CatGPT](https://www.cat-gpt.com/) 😹
-
+-->
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
