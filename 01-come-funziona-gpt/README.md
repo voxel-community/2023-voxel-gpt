@@ -14,7 +14,7 @@ Ma prima, se sei curiosa di sapere meglio in cosa consiste ChatGPT, leggi qui so
 
 ## Come funziona ChatGPT
 
-ChatGPT è un tipo di "large language model" (LLM), ovvero modello di linguaggio basato sull'architettura GPT sviluppata da [**OpenAI**](https://openai.com/). È progettato per generare risposte simili a quelle umane a richieste di linguaggio naturale 💬 come domande o affermazioni.
+ChatGPT è un tipo di ***large language model*** (LLM), ovvero un modello di linguaggio basato sull'architettura GPT sviluppata da [**OpenAI**](https://openai.com/). È progettato per generare risposte simili a quelle umane a richieste di linguaggio naturale 💬 come domande o affermazioni.
 
 ChatGPT funziona analizzando il testo in ingresso e utilizzando una rete neurale per generare una risposta simile nello stile e nel tono a una risposta generata da un essere umano. La rete neurale viene addestrata su grandi quantità di dati testuali per imparare i modelli del linguaggio e le relazioni tra le diverse parole.
 
@@ -23,15 +23,15 @@ Quando viene fornita una *prompt*, ChatGPT utilizza le conoscenze apprese per ge
 > ***Curiosità: cos'è OpenAI?***
 > OpenAI è una società di ricerca leader nel campo dell'intelligenza artificiale (IA), fondata nel 2015 da un team di scienziati, ricercatori e ingegneri, tra cui Elon Musk.
 > OpenAI ha apportato significativi contributi al campo dell'IA, tra cui modelli di linguaggio all'avanguardia (es. **GPT**), modelli per la creazione di immagini da testo (es. **DALL-E**) e nuovi algoritmi di *reinforcement learning*.
-> OpenAI si impegna anche a garantire che lo sviluppo dell'AI sia effettuato in modo etico e responsabile. La società promuove la trasparenza nella ricerca sull'AI e ha sviluppato diverse linee guida per lo sviluppo ed il dispiegamento etico dei sistemi di AI.
+> OpenAI si impegna anche a garantire che lo sviluppo dell'AI sia effettuato in modo etico e responsabile. La società promuove la trasparenza nella ricerca sull'AI e ha sviluppato diverse linee guida per lo sviluppo ed il dispiegamento etico dei sistemi di AI. Dal 2019, Microsoft ha instaurato una partnership con OpenAI attraverso investimenti multimiliardari.
 
 ### La storia di ChatGPT
 
-ChatGPT si basa su di un altro modello sviluppato da OpenAI chiamato **GPT-3**. ChatGPT è una versione di GPT-3 ottimizzata specificamente per l'uso in chatbot 🤖 e agenti conversazionali. È progettato per essere più coinvolgente e interattivo con gli utenti. 
+ChatGPT si basa su di un altro modello sviluppato da OpenAI chiamato GPT-3. ChatGPT è una versione di GPT-3 ottimizzata specificamente per l'uso in chatbot 🤖 e agenti conversazionali. È progettato per essere più coinvolgente e interattivo con gli utenti. 
 
-GPT-3 è la terza versione di un modello chiamato *Generative Pre-trained Transformer* introdotto nel 2020, che si basa sull'architettura ***Transformer***. GPT-3 è grande modello con 175 miliardi di parametri. Viene pre-addestrato su un ampio corpus di dati di testo (17 GB) 📚 e successivamente raffinato per compiti specifici, come la risposta alle domande o il completamento del testo. Il vantaggio chiave di GPT è la sua capacità di generare testo coerente e fluido che è simile in stile e tono al testo scritto da esseri umani.
+**GPT-3** è la terza versione di un modello chiamato *Generative Pre-trained Transformer* (GPT) introdotto nel 2020, che si basa sull'architettura *Transformer*. GPT-3 è grande modello con 175 miliardi di parametri. Viene pre-addestrato su un ampio corpus di dati di testo (17 GB) 📚 e successivamente raffinato per compiti specifici, come la risposta alle domande o il completamento del testo. Il vantaggio chiave di GPT è la sua capacità di generare testo coerente e fluido che è simile in stile e tono al testo scritto da esseri umani.
 
-*Transformer* è una rete neurale introdotta da Google nel 2017. È progettata per elaborare dati sequenziali (es. dati testuali) in modo più efficiente rispetto alle reti neurali ricorrenti (RNN) tradizionali. L'innovazione chiave dell'architettura Transformer è il *meccanismo di attenzione* 👀 , che consente al modello di concentrarsi su diverse parti della sequenza di input durante la generazione di previsioni.
+***Transformer*** è una rete neurale introdotta da Google nel 2017. È progettata per elaborare dati sequenziali (es. dati testuali) in modo più efficiente rispetto alle reti neurali ricorrenti (RNN) tradizionali. L'innovazione chiave dell'architettura Transformer è il *meccanismo di attenzione* 👀 , che consente al modello di concentrarsi su diverse parti della sequenza di input durante la generazione di previsioni.
 
 Nel marzo 2023, OpenAI ha rilasciato la nuova versione chiamata **GPT-4**. Si tratta di un modello ancora più grande, con mille miliardi di parametri 🦾 e addestrato su 45 GB di dati. Inoltre GPT-4 è un modello multimodale che accetta in input sia immagini che testo (e produce output testuale).
 
@@ -44,6 +44,16 @@ Tramite le API di OpenAI è ancora possibile utilizzare tutti i modelli GPT disp
 
 P.S. Cerchi un'alternativa a ChatGPT dopo il blocco in Italia? Prova [CatGPT](https://www.cat-gpt.com/) 😹
 -->
+
+### Esiste altro oltre ChatGPT?
+
+Ebbene sì, Google sta sviluppando un proprio chatbot noto come [**Bard**](https://bard.google.com/), che al momento non è ancora disponibile in Italia. Bard è basato su un modello chiamato BERT (Bidirectional Encoder Representations from Transformers), che a sua volta si fonda sempre sull'architettura dei *transformer*.
+
+In poche parole, la differenza tra i due approcci sta nel fatto che BERT si concentra sulla comprensione del contesto in modo bidirezionale (sia il contesto precedente che il successivo di una parola all'interno di una frase), mentre GPT è focalizzato sulla generazione del testo basata sul contesto precedente. 
+
+---
+
+Adesso che ti sei fatta un'idea di cosa sia ChatGPT, sei pronta ad iniziare! Puoi passare al capitolo successivo ✨
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------: |
