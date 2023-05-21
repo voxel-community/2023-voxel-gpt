@@ -142,7 +142,7 @@ res       = generate( model, prompt, temp )
 print_res( res, max_reps )
 ```
 
-Nota che il modello DistilGPT2 supporta solo la lingua inglese, pertanto la prompt deve essere una frase in inglese. Enjoy! 🤪
+Nota che il modello DistilGPT2 supporta solo la lingua inglese, pertanto la prompt deve essere una frase in inglese. Enjoy! 🇬🇧
 
 
 | Capitolo precedente                                                                                                                                          | Capitolo successivo                                                                           |
