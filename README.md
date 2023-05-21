@@ -32,4 +32,4 @@ Se vuoi approfondire l'argomento su modelli di linguaggio e machine learning, pu
 Se vuoi rimanere aggiornata sui nostri prossimi eventi di **Voxel Community**, qui trovi i nostri contatti:
 
 [Sito web](https://www.voxel.community) |
-[Instagram](https://instagram.com/voxelcommunity) | [Email](hello@voxel.community)
+[Instagram](https://instagram.com/voxelcommunity) | [Email](mailto:hello@voxel.community)
