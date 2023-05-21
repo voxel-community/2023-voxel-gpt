@@ -308,7 +308,7 @@ def retrieve_model( id ):
 custom_name = "XXXXX"
 ```
 
-Per il fine-tuning, ti suggeriamo di utilizzare un modello GPT-3 di tipo `ada` ([qui](https://platform.openai.com/docs/models/gpt-3) la lista dei modelli), per velocizzare al massimo i tempi di addestramento, che limitiamo a 4 epoche. Potrebbe lo stesso volerci del tempo ⏳ (una decina di minuti almeno), poiché il tuo *job* viene inserito in una coda con tutti gli altri processi in esecuzione in quel momento.
+Per il fine-tuning, ti suggeriamo di utilizzare un modello GPT-3 di tipo `ada` ([qui](https://platform.openai.com/docs/models/gpt-3) la lista dei modelli), per velocizzare al massimo i tempi di addestramento, che limitiamo a 4 epoche. Potrebbe lo stesso volerci del tempo ⏳ (una quindicina di minuti almeno), poiché il tuo *job* viene inserito in una coda con tutti gli altri processi in esecuzione in quel momento.
 
 Tempo di lanciare il comando!
 
