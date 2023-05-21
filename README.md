@@ -1,4 +1,4 @@
-# Scopri come creare un ChatGPT personalizzato 👩‍💻
+# Crea un ChatGPT personalizzato 👩‍💻
 
 ## Obiettivo di oggi
 Scopri in cosa consiste ChatGPT, come funziona, e quali sono le componenti fondamentali di questo tipo di intelligenza artificiale 🧠
