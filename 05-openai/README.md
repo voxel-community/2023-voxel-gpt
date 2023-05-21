@@ -361,7 +361,7 @@ Adesso è tutto pronto per testare il nuovo modello! Scrivi una qualsiasi promtp
 ```py
 prompt = "mermaid, monk, sling, crab"
 temp   = 0.9
-view_completion( tuned_model, prompt, temperature=temp, max_tokens=200 )
+view_completion( tuned_model, prompt, temperature=temp, max_tokens=150 )
 ```
 
 Forte no? 😄 Oltre le chiamate API da codice, puoi testare il tuo nuovo modello tramite un'interfaccia stile ChatGPT fornita da OpenAI che si chiama [**Playground**](https://platform.openai.com/playground). Ti basta selezionare dalla tendina "Model" in alto a destra il nome del tuo modello. Puoi anche impostare un valore di temperatura dall'interfaccia. Scrivi le tue quattro parole, e buon divertimento! ✨
