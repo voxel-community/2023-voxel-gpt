@@ -129,7 +129,7 @@ prompt    = "Once upon a time, in a land far far away, there was"
 temp      = 0.8
 max_reps  = 10
 
-res       = generate( model, prompt, temp )
+res       = completion( model, prompt, temp )
 print_res( res, max_reps )
 ```
 
@@ -138,7 +138,7 @@ prompt    = "They were locked together in the room. She knew one of them was the
 temp      = 1.2
 max_reps  = 10
 
-res       = generate( model, prompt, temp )
+res       = completion( model, prompt, temp )
 print_res( res, max_reps )
 ```
 

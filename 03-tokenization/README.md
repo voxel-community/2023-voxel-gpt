@@ -49,6 +49,7 @@ In una nuova cella, esegui il seguente codice per importare i pacchetti necessar
 ```py
 import  os
 import  keras_nlp
+import  string
 import  numpy         as      np
 import  tensorflow    as      tf
 from    tensorflow    import  keras
@@ -256,13 +257,13 @@ Per prima cosa, puoi provare a farti predirre una singola parola da una prompt p
 
 ```py
 prompt = "There is something in here that we"
-next_token( model, tokenizer, prompt )
+next_token( model, tokenizer, prompt=prompt )
 ```
 Il risultato predetto dovrebbe essere la parola `had`. E fin qui okay! Prova a passare la stessa prompt alla funzione che esegue la completion di base:
 
 ```py
 prompt = "There is something in here that we"
-basic_completion( model, tokenizer, prompt, max_length=150 )
+basic_completion( model, tokenizer, prompt=prompt )
 ```
 
 Come avrai notato, questo algoritmo "greedy" non funziona molto bene 😅 Un problema comune accade quando la completion inizia a generare sempre la stessa breve sequenza di parole, in questo caso `of the other`.
@@ -271,7 +272,7 @@ Proviamo come se la cava l'algoritmo Top-p. Essendo un algoritmo non-determinist
 
 ```py
 prompt = "There is something in here that we"
-top_p_completion( model, tokenizer, prompt, max_length=150 ).decode( "utf-8" )
+top_p_completion( model, tokenizer, prompt=prompt ).decode( "utf-8" )
 ```
 
 Il risultato sarà prevedibilmente molto... creativo 🤪 La frase generata è con ogni probabilità priva di senso, ma a differenza della completion basilare, è più improbabile che l'algoritmo si "incastri" e finisca a generare sempre la stessa sequenza di parole.
