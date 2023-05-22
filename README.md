@@ -22,9 +22,8 @@ Se vuoi approfondire l'argomento su modelli di linguaggio e machine learning, pu
 
 * [Blog ufficiale di OpenAI che presenta lo sviluppo e le limitazioni di ChatGPT](https://openai.com/blog/chatgpt)
 * [Articolo sul funzionamento dell'architettura Transformer e il meccanismo di Attention](https://towardsdatascience.com/all-you-need-to-know-about-attention-and-transformers-in-depth-understanding-part-1-552f0b41d021)
-* [Guida con strategie, linee guida, e raccomandazioni per lo sviluppo di Large Language Models (LLMs)](https://github.com/brexhq/prompt-engineering)
-* [Corso gratuito su machine learning (ML) e Python che trovi su FreeCodeCamp](https://www.freecodecamp.org/learn/machine-learning-with-python)
-* [Corso gratuito offerto dalla Standford University su ML](https://www.coursera.org/learn/machine-learning)
+* [Guida con strategie e raccomandazioni per lo sviluppo di Large Language Models (LLMs)](https://github.com/brexhq/prompt-engineering)
+* [Serie di corsi gratuiti su deep learning e programmazione in Python](https://www.kaggle.com/learn)
 
 
 ## Contatti
