@@ -62,7 +62,7 @@ KEY = "sk-XXXXXXXXXXX"
 ```
 Purtroppo, le richieste alle API sono a pagamento 💰 Il pagamento viene effettuato in base al numero di token ricevuti/trasmessi e a quale modello si sta utilizzando ([qui](https://openai.com/pricing) la lista dettagliata dei costi).
 
-Per l'esercizio di oggi, Voxel ha messo a disposizione una chiave temporanea per tutte 💖 Tuttavia, nel caso volessi più avanti continuare a fare delle prove con le API, dovrai crearti un tuo [account](https://platform.openai.com/account/api-keys) ed una nuova chiave personale. 
+Per l'esercizio di oggi, Voxel ha messo a disposizione una chiave temporanea per tutte ([link](https://pastebin.com/quuMyRyJ)) 💖 Tuttavia, nel caso volessi più avanti continuare a fare delle prove con le API, dovrai crearti un tuo [account](https://platform.openai.com/account/api-keys) ed una nuova chiave personale. 
 
 
 ```py
