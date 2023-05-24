@@ -5,29 +5,29 @@
 | [◀︎ Torna all'inizio](../../..) | [01 Come funziona ChatGPT ▶︎](../01-come-funziona-gpt) |
 
 ## Obiettivo
-Prendi confidenza con gli strumenti che ti serviranno in questo esercizio 👩‍💻
+Prendi confidenza con gli strumenti necessari per questo esercizio. 👩‍💻
 
-Nell'esempio di oggi, scriviamo codice in **Python**, il linguaggio di programmazione più diffuso per sviluppare reti neurali.
+Nell'esempio di oggi, scriverai codice in **Python**, il linguaggio di programmazione più diffuso per lo sviluppo di reti neurali.
 
-Inoltre, anziché programmare con un classico editor di codice (come Visual Studio Code),  utilizziamo uno strumento Google chiamato **Google Colaboratory** (o più semplicemente Colab), un editor per codice Python totalmente online. Colab non richiede installazioni o configurazioni particolari, per questo è perfettamente compatibile con tutti i sistemi operativi (es. Windows, MacOS, Linux).
+Inoltre, anziché programmare con un classico editor di codice come Visual Studio Code, utilizzerai uno strumento chiamato **Google Colaboratory** (o semplicemente Colab), un editor online per programmare in Python. Colab non richiede installazioni o configurazioni particolari ed è perfettamente compatibile con tutti i sistemi operativi (ad esempio, Windows, macOS, Linux).
 
 
 ## Crea un notebook in Colab
 
 1. Accedi a Colab utilizzando il tuo account Google: [https://colab.research.google.com/](https://colab.research.google.com/) (se non hai un account Google, creane uno).
-2. Crea un nuovo notebook. Verrà salvato in automatico sul tuo Google Drive in una cartella solitamente chiamata *Colab Notebooks*.
-3. I notebook python hanno estensione `.ipynb`. In alto a sinistra, trovi il nome del tuo file, che puoi rinominare come preferisci, es. `primo_file.ipynb`.
+2. Crea un nuovo notebook. Verrà automaticamente salvato nella tua cartella di Google Drive, solitamente chiamata *Colab Notebooks*.
+3. I notebook python hanno estensione `.ipynb`. In alto a sinistra trovi il nome del tuo file, che puoi rinominare a tua scelta, ad esempio `primo_file.ipynb`.
 
 
 ### Crea un codice di prova
 
-Un notebook può contenere insieme sia pezzi di codice che pezzi di testo. Per scrivere del codice, crea una cella di codice cliccando sul pulsante `+ Code`.
+Un notebook può contenere sia pezzi di codice che pezzi di testo. Per scrivere del codice, crea una cella di codice cliccando sul pulsante `+ Code`.
 
 ![Pulsante aggiunta blocco testo](../assets/00-notebook.png)
 
 Nel riquadro puoi scrivere codice esattamente come se stessi usando un editor di codice classico come Visual Studio Code.
 
-A sinistra della cella di codice trovi un pulsante ▶️ per eseguire il codice contenuto in quella cella. In aggiunta, se clicchi dentro la cella, compaiono dei pulsanti a destra, tra cui un cestino 🚮 per cancellare la cella.
+A sinistra della cella di codice, trovi un pulsante ▶️ per eseguire il codice contenuto in quella cella. Inoltre, se clicchi all'interno della cella, compaiono dei pulsanti a destra, tra cui un cestino 🚮 per cancellare la cella.
 
 ![Cella di codice](../assets/00-cell.png)
 
@@ -36,11 +36,11 @@ Fai una prova a scrivere del codice nella cella ed eseguirla. Incolla nella cell
 ```py
 print( "ciao" )
 ```
-Adesso premi sul pulsante ▶️ per eseguire la cella (oppure usa il comando `ctrl + enter` o `cmd + enter`). La prima volta che esegui un nuovo notebook, ci impiegherà qualche secondo per aprire la sessione online (puoi controllare lo stato della connessione in alto a destra). Puoi verificare che la cella di codice è in esecuzione dall'icona del pulsante ▶️ che è cambiata.
+Ora premi il pulsante ▶️ per eseguire la cella (oppure utilizza la combinazione di tasti `ctrl + enter` o `cmd + enter`). La prima volta che esegui un nuovo notebook, potrebbe richiedere qualche secondo per aprire la sessione online (puoi verificare lo stato della connessione in alto a destra). Inoltre, puoi verificare che la cella di codice è in esecuzione dall'icona del pulsante ▶️ che è cambiata.
 
 ![Esecuzione in corso](../assets/00-exec.png)
 
-Quando l'esecuzione è conclusa, sotto la cella di codice compare un box con il risultato, ovvero `ciao`.
+Quando l'esecuzione è conclusa, sotto la cella di codice comparirà un box con il risultato, ovvero `ciao`.
 
 ![Esecuzione terminata](../assets/00-done.png)
 
@@ -70,10 +70,9 @@ Scrivere codice non deve essere un'esperienza noiosa. Se hai bisogno di un livel
 
 ![Menu impostazioni](../assets/00-settings.png)
 
-Vai sulle impostazioni miscellanee, e prova ad attivare una delle *modalità* oppure azzarda un *power level* superiore! Buon divertimento! 💥🐶🐱🦀
+Tra le impostazioni miscellanee, prova ad attivare una delle tre *modalità* 🐶🐱🦀 oppure osa con un *power level* superiore! 💥 Buon divertimento!
 
 ![Impostazioni miscellanee](../assets/00-misc.png)
-
 
 
 

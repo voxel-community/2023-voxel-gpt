@@ -5,7 +5,7 @@ Scopri in cosa consiste ChatGPT, come funziona, e quali sono le componenti fonda
 
 
 ## Struttura del workshop
-Il workshop è strutturato in 5 capitoli, più un capitolo introduttivo per il setup di partenza. All'interno di ogni capitolo, troverai una breve guida attraverso cui imparerai il significato di un componente dei modelli di linguaggio. Nell'ultimo capitolo proverai con mano a creare una versione personalizzata di un modello completo come ChatGPT 🤩
+Il workshop è suddiviso in 5 capitoli, oltre a un capitolo introduttivo per la configurazione iniziale. All'interno di ogni capitolo, troverai una breve guida che ti aiuterà a comprendere il ruolo delle principali componenti dei modelli di linguaggio. Nell'ultimo capitolo proverai con mano a creare una versione personalizzata di un modello completo come ChatGPT 🤩
 
 #### Indice dei capitoli
 
@@ -18,7 +18,7 @@ Il workshop è strutturato in 5 capitoli, più un capitolo introduttivo per il s
 
 ## Approfondimenti
 
-Se vuoi approfondire l'argomento su modelli di linguaggio e machine learning, puoi iniziare da qui:
+Se desideri approfondire l'argomento dei modelli di linguaggio e del deep learning, puoi iniziare da qui:
 
 * [Blog ufficiale di OpenAI che presenta lo sviluppo e le limitazioni di ChatGPT](https://openai.com/blog/chatgpt)
 * [Articolo sul funzionamento dell'architettura Transformer e il meccanismo di Attention](https://towardsdatascience.com/all-you-need-to-know-about-attention-and-transformers-in-depth-understanding-part-1-552f0b41d021)

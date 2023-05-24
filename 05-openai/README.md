@@ -97,7 +97,7 @@ Generare esempi di liste `[ race, class, weapon, pet ]` è un compito facile. Ge
 
 La prompt intermedia va formulata in modo da ottenere la `completion` completa che desideriamo. Non esiste un'unica soluzione, in questo esempio proveremo la seguente:
 
-> Create a detailed description of a Dungeons and Dragons character with `race`, `class`, `weapon` as favorite weapon, and `pet` as beloved pet. Write out the description as a list of name, physical appearance, background, and personality in a maximum of 100 words:
+> Create a detailed description of a Dungeons and Dragons character with `race` race, `clss` class, `weapon` as favorite weapon, and `pet` as beloved pet. Write out the description as a list of name, physical appearance, background, and personality in a maximum of 100 words:
 
 Questa servirà solo per generare le `completion`, verrà poi scartata al momento di salvare il dataset.
 
@@ -111,7 +111,7 @@ prompt_inter += "Write out the description as a list of name, physical appearanc
 prompt_final  = "{race}, {clss}, {weapon}, {pet}"
 ```
 
-Queste prompt si possono considerare dei "template", a cui adesso vanno riempiti i campi `race`, `class`, `weapon`, e `pet` con degli esempi. Il numero di esempi per ogni campo determina la grandezza finale del dataset. Per velocizzare il processo, ci limitiamo per il momento a due esempi per ogni campo (per un totale di 16 campioni nel dataset):
+Queste prompt si possono considerare dei "template", a cui adesso vanno riempiti i campi `race`, `clss`, `weapon`, e `pet` con degli esempi. Il numero di esempi per ogni campo determina la grandezza finale del dataset. Per velocizzare il processo, ci limitiamo per il momento a due esempi per ogni campo (per un totale di 16 campioni nel dataset):
 
 ```py
 list_race   = [ 'human', 'elf' ]
@@ -146,7 +146,7 @@ def view_completion( model, prompt, temperature=0.8, max_tokens=500 ):
 
 #### 3c. Componi gli elementi del dataset
 
-Adesso metti insieme il dataset. Riempi le prompt intermedie e finali con i possibili valori di `race`, `class`, `weapon`, e `pet`. Usa le prompt intermedie per ottenere le corrispondenti `completion`. Nel dataset salva solo le coppie: "prompt finale" → `completion`.
+Adesso metti insieme il dataset. Riempi le prompt intermedie e finali con i possibili valori di `race`, `clss`, `weapon`, e `pet`. Usa le prompt intermedie per ottenere le corrispondenti `completion`. Nel dataset salva solo le coppie: "prompt finale" → `completion`.
 
 ```py
 def generate_data( model, temperature=0.8, max_tokens=500 ):

@@ -8,9 +8,9 @@
 
 Crea un modello di linguaggio come ChatGPT!
 
-Nel corso di questo esercizio, scoprirai le componenti fondamentali di un modello di linguaggio, come i processi di *embedding*, *tokenization*, e *completion*. Implementerai modelli sempre più complessi, fino a personalizzare un vero modello ChatGPT 🔥
+Durante l'incontro di oggi, scoprirai le componenti fondamentali di un modello di linguaggio, come i processi di *embedding*, *tokenization*, e *completion*. Implementerai modelli sempre più complessi, fino a personalizzare un vero modello ChatGPT 🔥
 
-Ma prima, se sei curiosa di sapere meglio in cosa consiste ChatGPT, leggi qui sotto. Se invece sei impaziente di iniziare a programmare, passa direttamente al capitolo successivo 😎
+Ma prima, se sei curiosa di saperne di più su cosa sia ChatGPT, leggi qui di seguito. Se invece sei impaziente di iniziare a programmare, puoi passare direttamente al capitolo successivo 😎
 
 ## Come funziona ChatGPT
 
@@ -21,9 +21,9 @@ ChatGPT funziona analizzando il testo in ingresso e utilizzando una rete neurale
 Quando viene fornita una *prompt*, ChatGPT utilizza le conoscenze apprese per generare una risposta che sia probabilmente pertinente e coerente. Il modello non fornisce semplicemente una risposta predefinita per ogni richiesta, ma genera una risposta al momento in base al contesto e al significato del testo in ingresso.
 
 > ***Curiosità: cos'è OpenAI?***
-> OpenAI è una società di ricerca leader nel campo dell'intelligenza artificiale (IA), fondata nel 2015 da un team di scienziati, ricercatori e ingegneri, tra cui Elon Musk.
-> OpenAI ha apportato significativi contributi al campo dell'IA, tra cui modelli di linguaggio all'avanguardia (es. **GPT**), modelli per la creazione di immagini da testo (es. **DALL-E**) e nuovi algoritmi di *reinforcement learning*.
-> OpenAI si impegna anche a garantire che lo sviluppo dell'AI sia effettuato in modo etico e responsabile. La società promuove la trasparenza nella ricerca sull'AI e ha sviluppato diverse linee guida per lo sviluppo ed il dispiegamento etico dei sistemi di AI. Dal 2019, Microsoft ha instaurato una partnership con OpenAI attraverso investimenti multimiliardari.
+> OpenAI è una società leader nella ricerca nel campo dell'intelligenza artificiale (AI), fondata nel 2015 da un team di scienziati, ricercatori e ingegneri, tra cui Elon Musk.
+> OpenAI ha apportato contributi significativi al campo dell'AI, tra cui modelli di linguaggio all'avanguardia (come **GPT**), modelli per la generazione di immagini da testo (come **DALL-E**) e nuovi algoritmi di *reinforcement learning*.
+> OpenAI si impegna anche a garantire che lo sviluppo dell'AI avvenga in modo etico e responsabile. La società promuove la trasparenza nella ricerca sull'AI e ha sviluppato diverse linee guida per lo sviluppo ed il dispiegamento etico dei sistemi di AI. Dal 2019, Microsoft ha stabilito una partnership con OpenAI attraverso investimenti multimiliardari.
 
 ### La storia di ChatGPT
 
